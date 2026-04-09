@@ -1,0 +1,223 @@
+# SDWAN.md - The Open SD-WAN Knowledge Base
+site_name: Open SD-WAN
+site_url: https://sdwan.md
+site_description: The open-source knowledge base for Software-Defined Wide Area Networking (SD-WAN)
+site_author: SDWAN.md Community
+copyright: >
+  Made with 💚 by the SD-WAN community &mdash;
+  <a href="https://github.com/eldaninavas/sdwan.md/blob/main/LICENSE">MIT License</a> &middot;
+  <a href="/community/legal/">Legal & Disclaimer</a>
+
+repo_url: https://github.com/eldaninavas/sdwan.md
+repo_name: eldaninavas/sdwan.md
+
+hooks:
+  - hooks/generate_graph.py
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+    admonition:
+      note: material/pencil-circle
+      abstract: material/clipboard-text
+      info: material/information
+      tip: material/fire
+      success: material/check-circle
+      question: material/help-circle
+      warning: material/alert
+      failure: material/close-circle
+      danger: material/lightning-bolt
+      bug: material/bug
+      example: material/test-tube
+      quote: material/format-quote-close
+
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
+    - announce.dismiss
+    - header.autohide
+
+extra_css:
+  - assets/stylesheets/custom.css?v=20260410
+
+extra_javascript:
+  - assets/javascripts/custom.js
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang: en
+  - tags: {}
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/eldaninavas/sdwan.md
+      name: GitHub
+  generator: false
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+nav:
+  - Home:
+    - index.md
+    - Knowledge Graph: knowledge-graph.md
+  - Topics:
+    - topics/index.md
+    - Foundations:
+      - What is SD-WAN?: topics/what-is-sdwan.md
+      - SD-WAN Architecture: topics/architecture.md
+      - Overlay vs Underlay: topics/overlay-underlay.md
+      - SD-WAN vs Traditional WAN: topics/sdwan-vs-traditional.md
+      - Transport Independence: topics/transport-independence.md
+    - Routing & Traffic:
+      - Application-Aware Routing: topics/application-aware-routing.md
+      - Dynamic Path Selection: topics/dynamic-path-selection.md
+      - Traffic Steering & SLA: topics/traffic-steering-sla.md
+      - QoS & Traffic Shaping: topics/qos-traffic-shaping.md
+      - WAN Optimization: topics/wan-optimization.md
+    - Security:
+      - SD-WAN Security: topics/security.md
+      - Zero Trust & SASE: topics/zero-trust-sase.md
+      - IPsec & Encryption: topics/ipsec-encryption.md
+      - Segmentation & VRF: topics/segmentation-vrf.md
+    - Operations:
+      - Centralized Management: topics/centralized-management.md
+      - Zero-Touch Provisioning: topics/zero-touch-provisioning.md
+      - Monitoring & Analytics: topics/monitoring-analytics.md
+      - High Availability: topics/high-availability.md
+      - Multi-Cloud Connectivity: topics/multi-cloud.md
+  - Use Cases:
+    - use-cases/index.md
+    - Branch Office Connectivity: use-cases/branch-connectivity.md
+    - Multi-Cloud Access: use-cases/multi-cloud-access.md
+    - SaaS Optimization: use-cases/saas-optimization.md
+    - Retail & Distributed Sites: use-cases/retail-distributed.md
+    - Healthcare Networks: use-cases/healthcare.md
+    - Manufacturing & IoT: use-cases/manufacturing-iot.md
+    - Remote Work & Hybrid: use-cases/remote-work.md
+    - MPLS Migration: use-cases/mpls-migration.md
+    - Global WAN Modernization: use-cases/global-wan.md
+  - Implementations:
+    - implementations/index.md
+    - Fortinet:
+      - implementations/fortinet/index.md
+      - SD-WAN Basics: implementations/fortinet/sdwan-basics.md
+      - SD-WAN Zones: implementations/fortinet/sdwan-zones.md
+      - SD-WAN Members & Interfaces: implementations/fortinet/members-interfaces.md
+      - Health Check & SLA: implementations/fortinet/health-check-sla.md
+      - SD-WAN Rules: implementations/fortinet/sdwan-rules.md
+      - Performance SLA: implementations/fortinet/performance-sla.md
+      - BGP & Routing: implementations/fortinet/bgp-routing.md
+      - Hub & Spoke (ADVPN): implementations/fortinet/hub-spoke-advpn.md
+      - Multi-Hub Deployments: implementations/fortinet/multi-hub.md
+      - Dual-Hub HA: implementations/fortinet/dual-hub-ha.md
+      - IPsec Overlays: implementations/fortinet/ipsec-overlays.md
+      - SD-WAN with VXLAN: implementations/fortinet/sdwan-vxlan.md
+      - FortiManager Integration: implementations/fortinet/fortimanager.md
+      - FortiAnalyzer Monitoring: implementations/fortinet/fortianalyzer.md
+      - Best Practices: implementations/fortinet/best-practices.md
+      - Troubleshooting: implementations/fortinet/troubleshooting.md
+  - Community:
+    - community/index.md
+    - Contributing: community/contributing.md
+    - AI Integrations: community/integrations.md
+    - Legal & Disclaimer: community/legal.md
