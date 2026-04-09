@@ -29,13 +29,24 @@ The most comprehensive guide on this wiki. FortiGate SD-WAN configuration from b
 
 <div class="sdwan-card" markdown>
 
+### :material-shield-half-full: Palo Alto Networks
+
+Complete guide covering both Prisma SD-WAN (CloudGenix) and PAN-OS SD-WAN on PA-Series firewalls.
+
+**Covers:** Prisma SD-WAN controller, PAN-OS SD-WAN plugin, Panorama management, path quality, traffic distribution, VPN tunnels, SASE integration, and more.
+
+[:material-arrow-right: Palo Alto SD-WAN Guide](palo-alto/index.md){ .md-button }
+
+</div>
+
+<div class="sdwan-card" markdown>
+
 ### :material-plus-circle-outline: More Vendors Coming Soon
 
 We plan to add implementation guides for:
 
 - **Cisco Viptela / Catalyst SD-WAN**
 - **VMware VeloCloud**
-- **Palo Alto Prisma SD-WAN**
 - **Aruba EdgeConnect**
 - **Versa Networks**
 

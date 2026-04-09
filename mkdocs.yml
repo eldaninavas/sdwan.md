@@ -198,6 +198,25 @@ nav:
     - Global WAN Modernization: use-cases/global-wan.md
   - Implementations:
     - implementations/index.md
+    - Palo Alto:
+      - implementations/palo-alto/index.md
+      - Prisma SD-WAN Basics: implementations/palo-alto/prisma-sdwan-basics.md
+      - PAN-OS SD-WAN Basics: implementations/palo-alto/pan-os-sdwan-basics.md
+      - SD-WAN Interfaces: implementations/palo-alto/sdwan-interfaces.md
+      - Path Quality Profiles: implementations/palo-alto/path-quality-profiles.md
+      - Traffic Distribution: implementations/palo-alto/traffic-distribution.md
+      - Application Policies: implementations/palo-alto/application-policies.md
+      - VPN Tunnels: implementations/palo-alto/vpn-tunnels.md
+      - Hub & Spoke: implementations/palo-alto/hub-spoke.md
+      - Mesh Topology: implementations/palo-alto/mesh-topology.md
+      - High Availability: implementations/palo-alto/high-availability.md
+      - BGP & Routing: implementations/palo-alto/bgp-routing.md
+      - Security Integration: implementations/palo-alto/security-integration.md
+      - Panorama Management: implementations/palo-alto/panorama-management.md
+      - Prisma SD-WAN Controller: implementations/palo-alto/prisma-sdwan-controller.md
+      - Monitoring & Analytics: implementations/palo-alto/monitoring-analytics.md
+      - Best Practices: implementations/palo-alto/best-practices.md
+      - Troubleshooting: implementations/palo-alto/troubleshooting.md
     - Fortinet:
       - implementations/fortinet/index.md
       - SD-WAN Basics: implementations/fortinet/sdwan-basics.md
